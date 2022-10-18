@@ -1,0 +1,146 @@
+@use 'reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+  font-family:'Roboto','Noto Sans KR',sans-serif;
+  color:#292929;
+  word-break: keep-all;
+}
+
+
+.container{
+  background:#f6f6f9;
+  min-height:100vh;
+
+  header{
+    position: sticky;
+    z-index:3;
+    top:0;
+  }
+}
+
+.box{
+  border:1px solid #e2e2e2;
+  box-shadow: 3px 3px 12px rgba(0,0,0,0.05), 1px 1px 1px rgba(0,0,0,0.05);
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+input.small{
+  width:100%;
+  max-width:210px;
+}
+input.medium{
+  width:100%;
+  max-width:430px;
+}
+input.large{
+  width:100%;
+  max-width:650px;
+}
+input::placeholder, textarea::placeholder{
+  color:#aaa;
+}
+
+
+
+@media (max-width:1200px) {
+  .container{
+    header{
+      position: relative;
+    }
+  }
+}
+
+@media(max-width:768px){
+  input.small{
+    max-width:unset
+  }
+}
+
+
+// Element-plus css custom
+.el-checkbox{
+  --el-checkbox-checked-text-color: #0055FF;
+  --el-checkbox-checked-input-border-color: #004de6;
+  --el-checkbox-checked-bg-color: #0055FF;
+}
+.el-checkbox__inner{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:20px;
+  height:20px;
+  border:1px solid #c2c2c2;
+}
+.el-checkbox__inner::after{
+  left:unset;
+  top:4px;
+}
+.el-checkbox__label{
+  font-size:16px;
+  margin-left:2px;
+}
+
+.el-radio-button--large .el-radio-button__inner{
+  display:flex;
+  align-items: center;
+  padding:0 20px;;
+  height:36px;
+}
+:root{
+  --el-color-primary{
+    color:#292929;
+  }
+}
+.el-overlay-dialog{
+  padding:20px;
+}
+
+.el-dialog__header{
+  margin-right:0;
+  padding:0;
+  .head{
+    padding:20px;
+  }
+}
+.el-dialog__body{
+  padding:0 20px;
+}
+.el-dialog__footer{
+  padding:0;
+  .footer{
+    padding:20px;
+  }
+}
+
+.addUserDialog{
+  width:100%;
+  max-width:450px;
+  border-radius:10px;
+}
+
+.scheduleDialog{
+  width:100%;
+  max-width:450px;
+  border-radius:10px;
+}
+
+.renameDialog{
+  width:100%;
+  max-width:450px;
+  border-radius:10px;
+}
+
+.confirm{
+  width:100%;
+  max-width:360px;
+  border-radius:10px;
+}
+
+/* drawer css */
+
+.el-drawer__body{
+  padding:0;
+}
