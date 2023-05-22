@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   ssr:false,
   css:[
     'material-icons/iconfont/material-icons.css',
-
   ],
   app: {
     head: {
